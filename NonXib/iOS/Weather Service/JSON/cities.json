@@ -1,0 +1,82 @@
+{
+  "cities": [
+    {
+      "name": "Sydney", 
+      "country": "Australia", 
+      "lat": -33.865143, 
+      "long": 151.2099
+    }, 
+    {
+      "name": "Melbourne", 
+      "country": "Australia", 
+      "lat": -37.815018, 
+      "long": 144.946014
+    }, 
+    {
+      "name": "Brisbane", 
+      "country": "Australia", 
+      "lat": -27.470125, 
+      "long": 153.021072
+    }, 
+    {
+      "name": "Tasmania", 
+      "country": "Australia", 
+      "lat": -41.640079, 
+      "long": 146.315918
+    }, 
+    {
+      "name": "Adelaide", 
+      "country": "Australia", 
+      "lat": -34.92866, 
+      "long": 138.59863
+    }, 
+    {
+      "name": "Perth", 
+      "country": "Australia", 
+      "lat": -31.95224, 
+      "long": 115.8614
+    }, 
+    {
+      "name": "Darwin", 
+      "country": "Australia", 
+      "lat": -12.46113, 
+      "long": 130.84185
+    }, 
+    {
+      "name": "Canberra", 
+      "country": "Australia", 
+      "lat": -35.28346, 
+      "long": 149.12807
+    }, 
+    {
+      "name": "San Francisco", 
+      "country": "United States", 
+      "lat": 37.773972, 
+      "long": -122.431297
+    }, 
+    {
+      "name": "New York", 
+      "country": "United States", 
+      "lat": 40.71427, 
+      "long": -74.00597
+    }, 
+    {
+      "name": "Seattle", 
+      "country": "United States", 
+      "lat": 47.60621, 
+      "long": -122.33207
+    }, 
+    {
+      "name": "London", 
+      "country": "England", 
+      "lat": 51.51279, 
+      "long": -0.09184
+    }, 
+    {
+      "name": "Amsterdam", 
+      "country": "Netherlands", 
+      "lat": 52.37403, 
+      "long": 4.88969
+    }
+  ]
+}
