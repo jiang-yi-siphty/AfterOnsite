@@ -32,6 +32,7 @@
 		916526A31F6745CF000B76C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916526A21F6745CF000B76C9 /* ViewController.swift */; };
 		916526A81F6745CF000B76C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 916526A71F6745CF000B76C9 /* Assets.xcassets */; };
 		916526AB1F6745CF000B76C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 916526A91F6745CF000B76C9 /* LaunchScreen.storyboard */; };
+		A23D5562214F468900AF501D /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23D5561214F468900AF501D /* WeatherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		916526AA1F6745CF000B76C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		916526AC1F6745CF000B76C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		916526EC1F674852000B76C9 /* Weather-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Weather-Bridging-Header.h"; path = "../Weather-Bridging-Header.h"; sourceTree = "<group>"; };
+		A23D5561214F468900AF501D /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			children = (
 				916526A01F6745CF000B76C9 /* AppDelegate.swift */,
 				916526A21F6745CF000B76C9 /* ViewController.swift */,
+				A23D5561214F468900AF501D /* WeatherViewController.swift */,
 				916526A71F6745CF000B76C9 /* Assets.xcassets */,
 				916526A91F6745CF000B76C9 /* LaunchScreen.storyboard */,
 				916526AC1F6745CF000B76C9 /* Info.plist */,
@@ -251,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				91263A101F6755FA0057E5BF /* PredictedWeather.m in Sources */,
+				A23D5562214F468900AF501D /* WeatherViewController.swift in Sources */,
 				916526A31F6745CF000B76C9 /* ViewController.swift in Sources */,
 				91263A0F1F6755FA0057E5BF /* GetWeatherForCityResponse.m in Sources */,
 				916526A11F6745CF000B76C9 /* AppDelegate.swift in Sources */,

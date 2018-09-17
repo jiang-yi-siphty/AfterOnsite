@@ -63,4 +63,9 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         return sortedCountyGroupArray[section].0
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let weatherViewController = WeatherViewController()
+        weatherViewController.city = sortedCountyGroupArray[indexPath.section].1[indexPath.row]
+        present(weatherViewController, animated: true, completion: nil)
+    }
 }
