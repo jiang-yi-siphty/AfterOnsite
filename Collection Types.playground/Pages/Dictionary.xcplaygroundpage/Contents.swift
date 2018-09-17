@@ -7,4 +7,11 @@ var str = "Hello, playground"
 print(str.first ?? "-")
 str.last
 str.append(" append")
-str.
+str.lowercased()
+str
+str.capitalized
+str
+str.uppercased()
+str
+str.capitalized(with: Locale?)
+
