@@ -82,6 +82,7 @@ class ViewController: UIViewController {
     
 }
 
+// MARK: - Tabel View
 extension ViewController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -109,6 +110,7 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
 }
 
+// MARK: - Collection View
 extension ViewController:  UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
     var itemWidth: CGFloat {
         get{

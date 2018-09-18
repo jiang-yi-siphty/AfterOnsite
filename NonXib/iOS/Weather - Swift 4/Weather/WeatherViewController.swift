@@ -11,7 +11,7 @@ import UIKit
 
 class WeatherViewController: UIViewController {
     var city: City?
-    var currentWeather: CurrentWeather?
+    var currentWeather: CurrentWeather? 
     var backButton: UIButton? = UIButton()
 
     override func viewDidLoad() {
@@ -71,12 +71,12 @@ class WeatherViewController: UIViewController {
         
         
         let cityNameLabel = UILabel()
-        cityNameLabel.text = city?.name
+        cityNameLabel.text = city?.name ?? "Unknown City"
         cityNameLabel.font = .boldSystemFont(ofSize: 24)
         mainStackView.addArrangedSubview(cityNameLabel)
         
         let weatherDescriptionTextView = UITextView()
-        weatherDescriptionTextView.text = currentWeather?.longDescription
+        weatherDescriptionTextView.text = currentWeather?.longDescription ?? "-"
         weatherDescriptionTextView.textAlignment = .justified
         weatherDescriptionTextView.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
         weatherDescriptionTextView.font = .systemFont(ofSize: 16)
@@ -123,7 +123,5 @@ class WeatherViewController: UIViewController {
         rightDetailStackView.addArrangedSubview(airPressureLabel)
         rightDetailStackView.addArrangedSubview(windDirectionLabel)
         rightDetailStackView.addArrangedSubview(windSpeedLabel)
-        
-        
     }
 }
