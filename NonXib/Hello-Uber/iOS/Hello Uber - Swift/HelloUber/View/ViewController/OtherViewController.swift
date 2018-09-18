@@ -12,6 +12,8 @@ import UIKit
 class OtherViewController: UIViewController {
     var showViewButton = UIButton()
     var editBackTextField = UITextField()
+    var firstTextLabel = UILabel()
+    var secondTextLabel = UILabel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -48,6 +50,7 @@ class OtherViewController: UIViewController {
         //Navigation Bar button
         let anotherBackBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(segueBack))
         navigationItem.rightBarButtonItem = anotherBackBarButton
+        
     }
     
     @objc func showViewButtonTouchUpInside() {
@@ -65,17 +68,17 @@ class OtherViewController: UIViewController {
     @objc func segueBack(){
         navigationController?.popViewController(animated: true)
     }
-
+    
 }
 
 extension UIViewController {
- 
+    
     fileprivate func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
-
+    
     @objc func dismissKeyboard() {
         resigneAllResponders()
     }

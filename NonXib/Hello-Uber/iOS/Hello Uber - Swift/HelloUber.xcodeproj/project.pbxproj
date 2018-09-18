@@ -14,6 +14,11 @@
 		91A80EF61F676605003DEC15 /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A80EF51F676605003DEC15 /* Hello.m */; };
 		A2287FA721463BE4004EAEFB /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2287FA621463BE4004EAEFB /* OtherViewController.swift */; };
 		A2287FA92146471E004EAEFB /* OtherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2287FA82146471E004EAEFB /* OtherTableViewController.swift */; };
+		A2F8E8F221511B6A00FC00BC /* ForcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F021511B6A00FC00BC /* ForcastViewModel.swift */; };
+		A2F8E8F321511B6A00FC00BC /* CurrentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F121511B6A00FC00BC /* CurrentViewModel.swift */; };
+		A2F8E8F521511B7F00FC00BC /* DarkSky.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F421511B7F00FC00BC /* DarkSky.swift */; };
+		A2F8E8F921511B9E00FC00BC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F721511B9D00FC00BC /* ApiService.swift */; };
+		A2F8E8FA21511B9E00FC00BC /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F821511B9D00FC00BC /* ApiClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		91A80EF71F6766D3003DEC15 /* HelloUber-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloUber-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A2287FA621463BE4004EAEFB /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		A2287FA82146471E004EAEFB /* OtherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewController.swift; sourceTree = "<group>"; };
+		A2F8E8F021511B6A00FC00BC /* ForcastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForcastViewModel.swift; path = HelloUber/ViewModel/ForcastViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A2F8E8F121511B6A00FC00BC /* CurrentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentViewModel.swift; path = HelloUber/ViewModel/CurrentViewModel.swift; sourceTree = SOURCE_ROOT; };
+		A2F8E8F421511B7F00FC00BC /* DarkSky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSky.swift; sourceTree = "<group>"; };
+		A2F8E8F721511B9D00FC00BC /* ApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		A2F8E8F821511B9D00FC00BC /* ApiClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,13 +70,11 @@
 		91A80EDC1F676588003DEC15 /* HelloUber */ = {
 			isa = PBXGroup;
 			children = (
+				A2F8E8F621511B9D00FC00BC /* NetworkManager */,
 				A2287FAC2147C46C004EAEFB /* View */,
 				A2287FAB2147C453004EAEFB /* ViewModel */,
 				A2287FAA2147C44B004EAEFB /* Model */,
 				91A80EDD1F676588003DEC15 /* AppDelegate.swift */,
-				91A80EDF1F676588003DEC15 /* ViewController.swift */,
-				A2287FA621463BE4004EAEFB /* OtherViewController.swift */,
-				A2287FA82146471E004EAEFB /* OtherTableViewController.swift */,
 				91A80EE41F676588003DEC15 /* Assets.xcassets */,
 				91A80EE61F676588003DEC15 /* LaunchScreen.storyboard */,
 				91A80EE91F676588003DEC15 /* Info.plist */,
@@ -89,6 +97,7 @@
 		A2287FAA2147C44B004EAEFB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A2F8E8F421511B7F00FC00BC /* DarkSky.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,6 +105,8 @@
 		A2287FAB2147C453004EAEFB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A2F8E8F121511B6A00FC00BC /* CurrentViewModel.swift */,
+				A2F8E8F021511B6A00FC00BC /* ForcastViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -103,8 +114,28 @@
 		A2287FAC2147C46C004EAEFB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A2F8E8EF21511B1200FC00BC /* ViewController */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A2F8E8EF21511B1200FC00BC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				91A80EDF1F676588003DEC15 /* ViewController.swift */,
+				A2287FA621463BE4004EAEFB /* OtherViewController.swift */,
+				A2287FA82146471E004EAEFB /* OtherTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A2F8E8F621511B9D00FC00BC /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				A2F8E8F721511B9D00FC00BC /* ApiService.swift */,
+				A2F8E8F821511B9D00FC00BC /* ApiClient.swift */,
+			);
+			path = NetworkManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,11 +211,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F8E8F321511B6A00FC00BC /* CurrentViewModel.swift in Sources */,
+				A2F8E8F521511B7F00FC00BC /* DarkSky.swift in Sources */,
 				A2287FA92146471E004EAEFB /* OtherTableViewController.swift in Sources */,
 				91A80EF61F676605003DEC15 /* Hello.m in Sources */,
 				A2287FA721463BE4004EAEFB /* OtherViewController.swift in Sources */,
+				A2F8E8F921511B9E00FC00BC /* ApiService.swift in Sources */,
 				91A80EE01F676588003DEC15 /* ViewController.swift in Sources */,
 				91A80EDE1F676588003DEC15 /* AppDelegate.swift in Sources */,
+				A2F8E8F221511B6A00FC00BC /* ForcastViewModel.swift in Sources */,
+				A2F8E8FA21511B9E00FC00BC /* ApiClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
