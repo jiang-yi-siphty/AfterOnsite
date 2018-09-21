@@ -14,6 +14,10 @@
 		91A80EF61F676605003DEC15 /* Hello.m in Sources */ = {isa = PBXBuildFile; fileRef = 91A80EF51F676605003DEC15 /* Hello.m */; };
 		A2287FA721463BE4004EAEFB /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2287FA621463BE4004EAEFB /* OtherViewController.swift */; };
 		A2287FA92146471E004EAEFB /* OtherTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2287FA82146471E004EAEFB /* OtherTableViewController.swift */; };
+		A2A0F35021547FB400E5493E /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A0F34F21547FB400E5493E /* DailyForecast.swift */; };
+		A2A0F352215491B900E5493E /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A0F351215491B900E5493E /* Daily.swift */; };
+		A2A0F3542154920200E5493E /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A0F3532154920200E5493E /* CurrentWeather.swift */; };
+		A2A0F3562154923C00E5493E /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A0F3552154923C00E5493E /* Flags.swift */; };
 		A2F8E8F221511B6A00FC00BC /* ForcastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F021511B6A00FC00BC /* ForcastViewModel.swift */; };
 		A2F8E8F321511B6A00FC00BC /* CurrentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F121511B6A00FC00BC /* CurrentViewModel.swift */; };
 		A2F8E8F521511B7F00FC00BC /* DarkSky.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2F8E8F421511B7F00FC00BC /* DarkSky.swift */; };
@@ -33,6 +37,10 @@
 		91A80EF71F6766D3003DEC15 /* HelloUber-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloUber-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A2287FA621463BE4004EAEFB /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 		A2287FA82146471E004EAEFB /* OtherTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherTableViewController.swift; sourceTree = "<group>"; };
+		A2A0F34F21547FB400E5493E /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
+		A2A0F351215491B900E5493E /* Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
+		A2A0F3532154920200E5493E /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		A2A0F3552154923C00E5493E /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		A2F8E8F021511B6A00FC00BC /* ForcastViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ForcastViewModel.swift; path = HelloUber/ViewModel/ForcastViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A2F8E8F121511B6A00FC00BC /* CurrentViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrentViewModel.swift; path = HelloUber/ViewModel/CurrentViewModel.swift; sourceTree = SOURCE_ROOT; };
 		A2F8E8F421511B7F00FC00BC /* DarkSky.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DarkSky.swift; sourceTree = "<group>"; };
@@ -98,6 +106,10 @@
 			isa = PBXGroup;
 			children = (
 				A2F8E8F421511B7F00FC00BC /* DarkSky.swift */,
+				A2A0F3532154920200E5493E /* CurrentWeather.swift */,
+				A2A0F34F21547FB400E5493E /* DailyForecast.swift */,
+				A2A0F351215491B900E5493E /* Daily.swift */,
+				A2A0F3552154923C00E5493E /* Flags.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,7 +182,7 @@
 				TargetAttributes = {
 					91A80ED91F676588003DEC15 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 4PQU2QH5JS;
+						DevelopmentTeam = 53BVUZB477;
 						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
@@ -213,14 +225,18 @@
 			files = (
 				A2F8E8F321511B6A00FC00BC /* CurrentViewModel.swift in Sources */,
 				A2F8E8F521511B7F00FC00BC /* DarkSky.swift in Sources */,
+				A2A0F3542154920200E5493E /* CurrentWeather.swift in Sources */,
 				A2287FA92146471E004EAEFB /* OtherTableViewController.swift in Sources */,
 				91A80EF61F676605003DEC15 /* Hello.m in Sources */,
+				A2A0F35021547FB400E5493E /* DailyForecast.swift in Sources */,
+				A2A0F352215491B900E5493E /* Daily.swift in Sources */,
 				A2287FA721463BE4004EAEFB /* OtherViewController.swift in Sources */,
 				A2F8E8F921511B9E00FC00BC /* ApiService.swift in Sources */,
 				91A80EE01F676588003DEC15 /* ViewController.swift in Sources */,
 				91A80EDE1F676588003DEC15 /* AppDelegate.swift in Sources */,
 				A2F8E8F221511B6A00FC00BC /* ForcastViewModel.swift in Sources */,
 				A2F8E8FA21511B9E00FC00BC /* ApiClient.swift in Sources */,
+				A2A0F3562154923C00E5493E /* Flags.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,7 +354,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4PQU2QH5JS;
+				DEVELOPMENT_TEAM = 53BVUZB477;
 				INFOPLIST_FILE = HelloUber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uber.HelloUber;
@@ -354,7 +370,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 4PQU2QH5JS;
+				DEVELOPMENT_TEAM = 53BVUZB477;
 				INFOPLIST_FILE = HelloUber/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = uber.HelloUber;
