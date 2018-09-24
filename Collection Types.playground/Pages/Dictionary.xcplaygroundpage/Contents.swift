@@ -13,5 +13,5 @@ str.capitalized
 str
 str.uppercased()
 str
-str.capitalized(with: Locale?)
+//str.capitalized(with: Locale?)
 

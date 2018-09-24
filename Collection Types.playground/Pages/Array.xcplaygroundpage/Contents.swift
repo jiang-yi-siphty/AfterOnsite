@@ -4,4 +4,6 @@ import Foundation
 
 var str = "Hello, playground"
 
-//: [Next](@next)
+var stringArray = ["a", nil, "b"]
+var result = stringArray.compactMap { $0 }.joined(separator: "\n")
+print(result)
