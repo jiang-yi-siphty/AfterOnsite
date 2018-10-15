@@ -22,7 +22,31 @@ class ViewController: UIViewController {
         let citiesResponse = service.getCities()
         cities = (citiesResponse?.cities)!
         countyGroupDic = Dictionary(grouping: cities, by: { $0.countryName })
+        
+        //💎Sort country first, then sort city.
         sortedCountyGroupArray = countyGroupDic.sorted { $0.0 < $1.0 }
+        var newCountryTupleArray = [(String, [City])]()
+        for countryTuple in sortedCountyGroupArray {
+            var newCountryTuple: (String, [City])
+            newCountryTuple.0 = countryTuple.0
+            newCountryTuple.1 = countryTuple.1.sorted(by: { (city1, city2) in
+                return city1.name < city2.name
+            })
+            newCountryTupleArray.append(newCountryTuple)
+        }
+        sortedCountyGroupArray = newCountryTupleArray
+        
+        
+        //💎Sort city first, then sort country
+//        var newDic: [String:[City]] = [:]
+//        countyGroupDic.forEach { dic in
+//            let citySortedDic = dic.value.sorted(by: { (city1, city2) in
+//                return city1.name < city2.name
+//            })
+//            newDic[dic.key] = citySortedDic
+//        }
+//        sortedCountyGroupArray = newDic.sorted { $0.0 < $1.0 }
+
         //UI
         title = "City List"
         let tableViewCollectionViewSwitcher = UIBarButtonItem(barButtonSystemItem: .organize , target: self, action: #selector(switchCollectionOrTabelView))
