@@ -9,21 +9,21 @@
 import Foundation
 
 struct DailyForecast: Codable {
-    let time: Int32
-    let summary: String
-    let icon: String
-    let temperatureMax: Double
-    let temperatureMin: Double
-    let humidity: Double
-    let pressure: Double
-    let windSpeed: Double
-    let windGust: Double
-    let windBearing: Double
-    let cloudCover: Double
-    let uvIndex: Int
-    let visibility: Int
-    let sunriseTime: Int32
-    let sunsetTime: Int32
+    let time: Int32?
+    let summary: String?
+    let icon: String?
+    let temperatureMax: Double?
+    let temperatureMin: Double?
+    let humidity: Double?
+    let pressure: Double?
+    let windSpeed: Double?
+    let windGust: Double?
+    let windBearing: Double?
+    let cloudCover: Double?
+    let uvIndex: Int?
+    let visibility: Int?
+    let sunriseTime: Int32?
+    let sunsetTime: Int32?
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

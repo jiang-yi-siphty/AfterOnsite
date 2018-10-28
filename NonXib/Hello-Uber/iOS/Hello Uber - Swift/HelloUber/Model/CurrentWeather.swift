@@ -9,18 +9,18 @@
 import Foundation
 
 struct Currently: Codable {
-    let time: Int32
-    let summary: String
-    let icon: String
-    let temperature: Double
-    let humidity: Double
-    let pressure: Double
-    let windSpeed: Double
-    let windGust: Double
-    let windBearing: Double
-    let cloudCover: Double
-    let uvIndex: Int
-    let visibility: Int
+    let time: Int32?
+    let summary: String?
+    let icon: String?
+    let temperature: Double?
+    let humidity: Double?
+    let pressure: Double?
+    let windSpeed: Double?
+    let windGust: Double?
+    let windBearing: Double?
+    let cloudCover: Double?
+    let uvIndex: Int?
+    let visibility: Int?
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

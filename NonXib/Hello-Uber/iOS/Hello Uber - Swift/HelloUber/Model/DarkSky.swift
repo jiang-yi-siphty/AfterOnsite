@@ -10,12 +10,12 @@ import Foundation
 
 struct DarkSky: Codable {
     
-    let latitude: Double
-    let longitude: Double
-    let timezone: String
-    let currently: Currently
-    let daily: Daily
-    let flags: Flags
+    let latitude: Double?
+    let longitude: Double?
+    let timezone: String?
+    let currently: Currently?
+    let daily: Daily?
+    let flags: Flags?
    
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)

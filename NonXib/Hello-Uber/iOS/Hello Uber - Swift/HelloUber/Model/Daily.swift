@@ -9,9 +9,9 @@
 import Foundation
 
 struct Daily: Codable {
-    let summary: String
-    let icon: String
-    let data: [DailyForecast]
+    let summary: String?
+    let icon: String?
+    let data: [DailyForecast?]
     
     init(from decoder: Decoder) throws{
         let container = try decoder.container(keyedBy: CodingKeys.self)

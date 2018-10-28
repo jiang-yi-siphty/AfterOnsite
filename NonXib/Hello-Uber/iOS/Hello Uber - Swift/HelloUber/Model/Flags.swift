@@ -9,9 +9,9 @@
 import Foundation
 
 struct Flags: Codable {
-    let sources: [String]
-    let nearestStation: Double
-    let units: String
+    let sources: [String?]
+    let nearestStation: Double?
+    let units: String?
     
     enum CodingKeys: String, CodingKey {
         case sources
